@@ -1,0 +1,150 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    display: block;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(#2f3e46, #84a98c);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header-container {
+    background: #84a98c;
+    border: solid 5px #2f3e46;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    margin: 5px 20px 5px 20px;
+}
+
+.main-logo span {
+    font-size: 24px;
+    font-weight: 700;
+    color: #F1F1F1;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+    color: #cad2c5;
+    text-shadow: 2px 2px 4px #2f3e46;
+}
+
+.header-content {
+    color: #F1F1F1;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 0;
+}
+
+.intro-container {
+    display: block;
+    background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291)),
+        url(/img/clay-banks-oO6Gm16Cqcg-unsplash.jpg) center center no-repeat;
+    background-size: cover;
+    border: solid 5px #2f3e46;
+    border-radius: 5px;
+    height: 90vh;
+    padding: 0;
+    margin: 20px;
+}
+
+.intro-content {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 100px;
+    margin: 0 auto;
+    color: #cad2c5;
+    text-shadow: 2px 2px 4px #2f3e46;
+}
+
+.intro-content h1 {
+    font-size: 60px;
+}
+
+.intro-content p {
+    font-size: 30px;
+}
+
+.intro-content a {
+    text-decoration: none;
+    color: #f4a261;
+}
+
+.intro-content a:hover {
+    text-decoration: underline;
+    color: #f4a261;
+}
+
+.main-nav {
+    display: none;
+}
+
+.mobile-nav span a {
+    font-size: 48px;
+    padding: 8px;
+    color: #F1F1F1;
+}
+
+.mobile-nav span a:hover {
+    color: #74b44a;
+}
+
+footer {
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .projects-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .main-nav {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    ul#navigation {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul#navigation li a {
+        color: #F1F1F1;
+        font-family: 'Cabin', sans-serif;
+        padding: 6px 12px;
+        border: solid 2px transparent;
+        text-transform: uppercase;
+    }
+
+    ul#navigation li a:hover {
+        color: #F1F1F1;
+        font-family: 'Cabin', sans-serif;
+        padding: 6px 12px;
+        border-bottom: solid 2px #74b44a;
+    }
+
+}
