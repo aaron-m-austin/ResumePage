@@ -47,10 +47,11 @@ body {
     margin: 0;
 }
 
+
 .intro-container {
     display: block;
     background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291)),
-        url(/img/clay-banks-oO6Gm16Cqcg-unsplash.jpg) center center no-repeat;
+        url("/img/clay-banks-oO6Gm16Cqcg-unsplash.jpg") center center no-repeat;
     background-size: cover;
     border: solid 5px #2f3e46;
     border-radius: 5px;
@@ -90,6 +91,111 @@ body {
     color: #f4a261;
 }
 
+.aboutme-container {
+    background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291));
+    border: solid 5px #2f3e46;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    margin: 5px 20px 5px 20px;
+}
+
+.aboutme-content {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 100px;
+    margin: 0 auto;
+    color: #cad2c5;
+    text-shadow: 2px 2px 4px #2f3e46;
+}
+
+.aboutme-photo {
+    width: 500px;
+    height: 600px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid 5px #2f3e46;
+}
+
+.projects-container {
+    background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291));
+    border: solid 5px #2f3e46;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    margin: 5px 20px 5px 20px;
+}
+
+.projects-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 100px;
+    margin: 0 auto;
+    color: #cad2c5;
+    text-shadow: 2px 2px 4px #2f3e46;
+}
+
+.projects-item {
+    border: solid 5px #2f3e46;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.contact-container {
+    background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291));
+    border: solid 5px #2f3e46;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    margin: 5px 20px 5px 20px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 50px;
+    margin: 0 auto;
+    color: #cad2c5;
+    text-shadow: 2px 2px 4px #2f3e46;
+}
+
+.footer-content {
+    background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291));
+    border: solid 5px #2f3e46;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    margin: 5px 20px 5px 20px;
+}
+
 .main-nav {
     display: none;
 }
@@ -101,7 +207,7 @@ body {
 }
 
 .mobile-nav span a:hover {
-    color: #74b44a;
+    color: #84a98c;
 }
 
 footer {
@@ -133,18 +239,20 @@ footer {
     }
 
     ul#navigation li a {
-        color: #F1F1F1;
-        font-family: 'Cabin', sans-serif;
+        color: #cad2c5;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
         padding: 6px 12px;
         border: solid 2px transparent;
         text-transform: uppercase;
+        text-shadow: 2px 2px 2px #2f3e46;
     }
 
     ul#navigation li a:hover {
         color: #F1F1F1;
-        font-family: 'Cabin', sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         padding: 6px 12px;
-        border-bottom: solid 2px #74b44a;
+        border-bottom: solid 2px #2f3e46;
     }
 
 }
