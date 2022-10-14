@@ -47,6 +47,18 @@ body {
     margin: 0;
 }
 
+.header-content a {
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.header-content a:hover {
+    text-decoration: none;
+    border-color: #f08527;
+    color: #cad2c5;
+    box-shadow: 0 0.5em 0.5em -0.4em #f08527;
+    cursor: pointer;
+}
+
 
 .intro-container {
     display: block;
@@ -87,12 +99,36 @@ body {
 }
 
 .intro-content a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: #f4a261;
 }
 
+.intro-content .github-link:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: rgba(56, 40, 40, 0.37);
+    border-radius: 8px;
+    color: #84a98c;
+    border: 3px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+button:hover {
+    border-color: #f08527;
+    color: #cad2c5;
+    box-shadow: 0 0.5em 0.5em -0.4em #f08527;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+
 .aboutme-container {
-    background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291));
+    background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291)), url(/img/tai-bui-393l7SYoM7w-unsplash.jpg) center center no-repeat;
+    background-size: cover;
     border: solid 5px #2f3e46;
     border-radius: 5px;
     display: flex;
@@ -153,9 +189,50 @@ body {
 }
 
 .projects-item {
+    display: flex;
+    flex-direction: column;
     border: solid 5px #2f3e46;
     border-radius: 10px;
-    margin: 20px;
+    margin: 5px;
+}
+
+.projects-item h3:hover {
+    border-color: #f08527;
+    color: #cad2c5;
+    box-shadow: 0 0.5em 0.5em -0.4em #f08527;
+    transform: translateY(-0.25em);
+    transition: color 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.projects-item a {
+    display: flex;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border: solid 5px #2f3e46;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.projects-item .btn {
+    background-color: rgba(56, 40, 40, 0.37);
+    size: 12px;
+    border-radius: 8px;
+    color: #84a98c;
+    border: 3px solid;
+    padding: 5px;
+    margin: 2px;
+    font-size: 1em;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.projects-item .btn:hover {
+    border-color: #f08527;
+    color: #cad2c5;
+    box-shadow: 0 0.5em 0.5em -0.4em #f08527;
+    transform: translateY(-0.25em);
+    cursor: pointer;
 }
 
 .contact-container {
@@ -185,9 +262,25 @@ body {
     text-shadow: 2px 2px 4px #2f3e46;
 }
 
+.contact-content a {
+    text-decoration: none;
+    color: #f4a261;
+}
+
+.contact-content a:hover {
+    text-decoration: underline;
+    color: #83c5be;
+}
+
+.contact-content a:visited:hover {
+    text-decoration: none;
+    color: #264653;
+}
+
 .footer-content {
-    background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291));
     border: solid 5px #2f3e46;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -213,6 +306,7 @@ body {
 footer {
     text-align: center;
 }
+
 
 @media only screen and (min-width: 768px) {
 
