@@ -1,8 +1,12 @@
 html {
-    font-size: 16px;
+    background: linear-gradient(#2f3e46, #84a98c);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-body {
+/* body {
     display: block;
     padding: 0;
     margin: 0;
@@ -11,7 +15,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+} */
 
 .header-container {
     background: #84a98c;
@@ -63,7 +67,7 @@ body {
 .intro-container {
     display: block;
     background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291)),
-        url("/img/clay-banks-oO6Gm16Cqcg-unsplash.jpg") center center no-repeat;
+        url('../img/clay-banks-oO6Gm16Cqcg-unsplash.jpg') center center no-repeat;
     background-size: cover;
     border: solid 5px #2f3e46;
     border-radius: 5px;
@@ -77,10 +81,10 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 1000px;
+    max-width: 3000px;
     text-align: center;
     padding: 100px;
-    margin: 0 auto;
+    margin: 20px;
     color: #cad2c5;
     text-shadow: 2px 2px 4px #2f3e46;
 }
@@ -127,7 +131,7 @@ button:hover {
 
 
 .aboutme-container {
-    background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291)), url(/img/tai-bui-393l7SYoM7w-unsplash.jpg) center center no-repeat;
+    background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291)), url('../img/tai-bui-393l7SYoM7w-unsplash.jpg') center center no-repeat;
     background-size: cover;
     border: solid 5px #2f3e46;
     border-radius: 5px;
@@ -307,11 +311,82 @@ footer {
     text-align: center;
 }
 
+@media only screen and (min-width: 280px) {
+    .intro-content {
+        display: flexbox;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 100%;
+        max-width: 3000px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        color: #cad2c5;
+        text-shadow: 2px 2px 4px #2f3e46;
+    }
+
+    .intro-content h1 {
+        font-size: 40px;
+    }
+
+    .intro-content p {
+        font-size: 20px;
+    }
+
+    .aboutme-content {
+        display: flexbox;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        width: 100%;
+        max-width: 768px;
+        text-align: center;
+        padding: 2px;
+        margin: 0 auto;
+        color: #cad2c5;
+        text-shadow: 2px 2px 4px #2f3e46;
+    }
+
+    .aboutme-content button {
+        background-color: rgba(56, 40, 40, 0.37);
+        border-radius: 8px;
+        color: #84a98c;
+        border: 3px solid;
+        padding: 1em 2em;
+        font-size: .8em;
+        transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+    }
+
+    .projects-container {
+        background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291));
+        border: solid 5px #2f3e46;
+        border-radius: 5px;
+    }
+
+    .projects-content {
+        display: flexbox;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 12px;
+        width: 100%;
+        max-width: 768px;
+        text-align: center;
+        padding: 2px;
+        margin: 0 auto;
+        color: #cad2c5;
+        text-shadow: 2px 2px 4px #2f3e46;
+    }
+
+}
+
 
 @media only screen and (min-width: 768px) {
 
     .projects-content {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: flex-start;
     }
@@ -322,6 +397,23 @@ footer {
 
     .mobile-nav {
         display: none;
+    }
+
+    .aboutme-container {
+        background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291)), url('../img/tai-bui-393l7SYoM7w-unsplash.jpg') center center no-repeat;
+        background-size: cover;
+        border: solid 5px #2f3e46;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 0;
+        height: 90vh;
+        margin: 5px 20px 5px 20px;
+    }
+
+    .projects-content {
+        font-size: 24px;
     }
 
     ul#navigation {
