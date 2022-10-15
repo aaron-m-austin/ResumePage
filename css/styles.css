@@ -183,7 +183,7 @@ button:hover {
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 24px;
-    width: 100%;
+    width: 50%;
     max-width: 1000px;
     text-align: center;
     padding: 100px;
@@ -194,6 +194,7 @@ button:hover {
 
 .projects-item {
     display: flex;
+    flex: 1 1 0px;
     flex-direction: column;
     border: solid 5px #2f3e46;
     border-radius: 10px;
