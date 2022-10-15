@@ -63,7 +63,7 @@ body {
 .intro-container {
     display: block;
     background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291)),
-        url("/img/clay-banks-oO6Gm16Cqcg-unsplash.jpg") center center no-repeat;
+        url('../img/clay-banks-oO6Gm16Cqcg-unsplash.jpg') center center no-repeat;
     background-size: cover;
     border: solid 5px #2f3e46;
     border-radius: 5px;
@@ -127,7 +127,7 @@ button:hover {
 
 
 .aboutme-container {
-    background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291)), url(/img/tai-bui-393l7SYoM7w-unsplash.jpg) center center no-repeat;
+    background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291)), url('../img/tai-bui-393l7SYoM7w-unsplash.jpg') center center no-repeat;
     background-size: cover;
     border: solid 5px #2f3e46;
     border-radius: 5px;
@@ -179,7 +179,7 @@ button:hover {
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 24px;
-    width: 100%;
+    width: 50%;
     max-width: 1000px;
     text-align: center;
     padding: 100px;
@@ -190,6 +190,7 @@ button:hover {
 
 .projects-item {
     display: flex;
+    flex: 1 1 0px;
     flex-direction: column;
     border: solid 5px #2f3e46;
     border-radius: 10px;
