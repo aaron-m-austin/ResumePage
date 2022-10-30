@@ -24,6 +24,8 @@ body {
 
 #mainNavbar .nav-link {
     color: white;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 #mainNavbar .nav-link:hover {
@@ -33,6 +35,8 @@ body {
 #mainNavbar .navbar-brand {
     color: #cad2c5;
     font-size: 1.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .navbar.scrolled {
@@ -41,14 +45,15 @@ body {
 }
 
 .intro-container {
-    display: block;
+    display: flex;
     background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291)),
         url('../img/clay-banks-oO6Gm16Cqcg-unsplash.jpg') center center no-repeat;
     background-size: cover;
+    align-items: center;
     border: solid 5px #2f3e46;
     border-radius: 5px;
     height: 90vh;
-    padding: 0;
+    padding: 5px;
     margin: 20px;
 }
 
@@ -290,9 +295,6 @@ footer {
 
 @media only screen and (min-width: 280px) {
     .intro-content {
-        display: flexbox;
-        align-items: center;
-        justify-content: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         width: 100%;
         max-width: 3000px;
