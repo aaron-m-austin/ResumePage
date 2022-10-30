@@ -34,7 +34,7 @@ body {
 
 #mainNavbar .navbar-brand {
     color: #cad2c5;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -50,18 +50,20 @@ body {
         url('../img/clay-banks-oO6Gm16Cqcg-unsplash.jpg') center center no-repeat;
     background-size: cover;
     align-items: center;
+    justify-content: center;
     border: solid 5px #2f3e46;
     border-radius: 5px;
     height: 90vh;
     padding: 5px;
     margin: 20px;
+    margin-top: 55px;
 }
 
 .intro-content {
     display: flexbox;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
     max-width: 3000px;
     text-align: center;
     padding: 100px;
@@ -294,15 +296,18 @@ footer {
 }
 
 @media only screen and (min-width: 280px) {
-    .intro-content {
+    .intro-content, .aboutme-content {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        width: 100%;
+        /* width: 100%; */
         max-width: 3000px;
         text-align: center;
         padding: 0;
         margin: 0;
         color: #cad2c5;
         text-shadow: 2px 2px 4px #2f3e46;
+        background: rgba(47,62,70,.8);
+        border-radius: 10px;
+        padding: 20px;
     }
 
     .intro-content h1 {
@@ -322,7 +327,7 @@ footer {
         width: 100%;
         max-width: 768px;
         text-align: center;
-        padding: 2px;
+        /* padding: 2px; */
         margin: 0 auto;
         color: #cad2c5;
         text-shadow: 2px 2px 4px #2f3e46;
