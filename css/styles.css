@@ -1,4 +1,4 @@
-html {
+body {
     background: linear-gradient(#2f3e46, #84a98c);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -17,52 +17,28 @@ html {
     background-size: cover;
 } */
 
-.header-container {
-    background: #84a98c;
-    border: solid 5px #2f3e46;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 0;
-    margin: 5px 20px 5px 20px;
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
 }
 
-.main-logo span {
-    font-size: 24px;
-    font-weight: 700;
-    color: #F1F1F1;
-    line-height: 1;
-    margin: 0;
-    text-transform: uppercase;
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #84a98c;
+}
+
+#mainNavbar .navbar-brand {
     color: #cad2c5;
-    text-shadow: 2px 2px 4px #2f3e46;
+    font-size: 1.5rem;
 }
 
-.header-content {
-    color: #F1F1F1;
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    margin: 0;
+.navbar.scrolled {
+    background-color: #f4a261;
+    transition: background .8s;
 }
-
-.header-content a {
-    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
-}
-
-.header-content a:hover {
-    text-decoration: none;
-    border-color: #f08527;
-    color: #cad2c5;
-    box-shadow: 0 0.5em 0.5em -0.4em #f08527;
-    cursor: pointer;
-}
-
 
 .intro-container {
     display: block;
