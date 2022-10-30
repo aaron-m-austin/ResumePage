@@ -20,6 +20,7 @@ body {
 #mainNavbar {
     font-size: 1.5rem;
     font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #mainNavbar .nav-link {
@@ -40,7 +41,7 @@ body {
 }
 
 .navbar.scrolled {
-    background-color: #f4a261;
+    background-color: rgba(0, 0, 0, .8);
     transition: background .8s;
 }
 
@@ -94,7 +95,7 @@ body {
     text-decoration: underline;
 }
 
-button {
+.skip-to-btn {
     background-color: rgba(56, 40, 40, 0.37);
     border-radius: 8px;
     color: #84a98c;
@@ -104,7 +105,7 @@ button {
     transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
 
-button:hover {
+.skip-to-btn:hover {
     border-color: #f08527;
     color: #cad2c5;
     box-shadow: 0 0.5em 0.5em -0.4em #f08527;
@@ -118,6 +119,7 @@ button:hover {
     background-size: cover;
     border: solid 5px #2f3e46;
     border-radius: 5px;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,7 +128,6 @@ button:hover {
 }
 
 .aboutme-content {
-    display: flexbox;
     align-items: center;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -137,7 +138,7 @@ button:hover {
     padding: 100px;
     margin: 0 auto;
     color: #cad2c5;
-    text-shadow: 2px 2px 4px #2f3e46;
+    text-shadow: 2px 2px 4px #f08527;
 }
 
 .aboutme-photo {
@@ -160,10 +161,10 @@ button:hover {
 }
 
 .projects-content {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 24px;
     width: 50%;
@@ -179,7 +180,7 @@ button:hover {
     display: flex;
     flex: 1 1 0px;
     flex-direction: column;
-    border: solid 5px #2f3e46;
+    /* border: solid 5px #2f3e46; */
     border-radius: 10px;
     margin: 5px;
 }
@@ -296,7 +297,9 @@ footer {
 }
 
 @media only screen and (min-width: 280px) {
-    .intro-content, .aboutme-content {
+
+    .intro-content,
+    .aboutme-content {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         /* width: 100%; */
         max-width: 3000px;
@@ -305,7 +308,7 @@ footer {
         margin: 0;
         color: #cad2c5;
         text-shadow: 2px 2px 4px #2f3e46;
-        background: rgba(47,62,70,.8);
+        background: rgba(47, 62, 70, .8);
         border-radius: 10px;
         padding: 20px;
     }
@@ -350,11 +353,10 @@ footer {
     }
 
     .projects-content {
-        display: flexbox;
-        align-items: center;
-        justify-content: center;
+        /* align-items: center;
+        justify-content: center; */
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 12px;
+        font-size: 14px;
         width: 100%;
         max-width: 768px;
         text-align: center;
@@ -366,6 +368,46 @@ footer {
 
 }
 
+@media only screen and (max-width: 780px) {
+    .aboutme-photo {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: solid 5px #2f3e46;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .aboutme-photo {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: solid 5px #2f3e46;
+    }
+
+    .aboutme-content {
+        align-items: center;
+        justify-content: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 14px;
+        width: 100%;
+        max-width: 768px;
+        text-align: center;
+        /* padding: 2px; */
+        margin: 0 auto;
+        color: #cad2c5;
+        text-shadow: 2px 2px 4px #2f3e46;
+    }
+
+}
+
+@media only screen and (max-width: 470px) {
+    .aboutme-photo {
+        display: none;
+    }
+}
 
 @media only screen and (min-width: 768px) {
 
