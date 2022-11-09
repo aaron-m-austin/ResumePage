@@ -142,11 +142,15 @@ body {
 }
 
 .aboutme-photo {
-    width: 500px;
-    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
+    width: 400px;
+    height: 500px;
     overflow: hidden;
     border: solid 5px #2f3e46;
+
 }
 
 .projects-container {
@@ -370,21 +374,29 @@ footer {
 
 @media only screen and (max-width: 780px) {
     .aboutme-photo {
-        width: 400px;
-        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 50%;
+        width: 400px;
+        height: 500px;
         overflow: hidden;
         border: solid 5px #2f3e46;
+        margin-left: 10%;
     }
 }
 
 @media only screen and (max-width: 580px) {
     .aboutme-photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 300px;
         height: 300px;
         border-radius: 50%;
         overflow: hidden;
         border: solid 5px #2f3e46;
+        margin-left: 18%;
     }
 
     .aboutme-content {
@@ -436,6 +448,17 @@ footer {
         padding: 8px 0;
         height: 90vh;
         margin: 5px 20px 5px 20px;
+    }
+
+    .aboutme-photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 400px;
+        height: 500px;
+        overflow: hidden;
+        margin-left: 10%;
     }
 
     .projects-content {
