@@ -50,9 +50,6 @@ body {
 }
 
 .intro-content {
-    display: flexbox;
-    align-items: center;
-    justify-content: center;
     max-width: 3000px;
     text-align: center;
     padding: 100px;
@@ -63,10 +60,6 @@ body {
 
 .intro-content h1 {
     font-size: 60px;
-}
-
-.intro-content p {
-    font-size: 30px;
 }
 
 .intro-content a {
@@ -131,9 +124,6 @@ body {
 }
 
 .aboutme-photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 50%;
     width: 400px;
     height: 500px;
@@ -169,7 +159,6 @@ body {
     display: flex;
     flex: 1 1 0px;
     flex-direction: column;
-    /* border: solid 5px #2f3e46; */
     border-radius: 10px;
     margin: 5px;
 }
@@ -191,6 +180,10 @@ body {
     border: solid 5px #2f3e46;
     border-radius: 10px;
     margin: 10px;
+}
+
+.projects-item p {
+    font-size: 20px;
 }
 
 .projects-item .btn {
@@ -285,6 +278,7 @@ footer {
     text-align: center;
 }
 
+
 @media only screen and (min-width: 280px) {
 
     .intro-content,
@@ -305,7 +299,7 @@ footer {
     }
 
     .intro-content p {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .aboutme-content {
@@ -317,7 +311,6 @@ footer {
         width: 100%;
         max-width: 768px;
         text-align: center;
-        /* padding: 2px; */
         margin: 0 auto;
         color: #cad2c5;
         text-shadow: 2px 2px 4px #2f3e46;
@@ -340,10 +333,7 @@ footer {
     }
 
     .projects-content {
-        /* align-items: center;
-        justify-content: center; */
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 14px;
         width: 100%;
         max-width: 768px;
         text-align: center;
@@ -355,21 +345,20 @@ footer {
 
 }
 
-@media only screen and (max-width: 780px) {
-    .aboutme-photo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        width: 400px;
-        height: 500px;
-        overflow: hidden;
-        border: solid 5px #2f3e46;
-        margin-left: 10%;
+
+@media only screen and (max-width: 885px) {
+    .intro-content p {
+        font-size: 24px;
     }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 725px) {
+    .intro-content p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     .aboutme-photo {
         display: flex;
         justify-content: center;
@@ -386,14 +375,17 @@ footer {
         align-items: center;
         justify-content: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 14px;
+        font-size: 20px;
         width: 100%;
         max-width: 768px;
         text-align: center;
-        /* padding: 2px; */
         margin: 0 auto;
         color: #cad2c5;
         text-shadow: 2px 2px 4px #2f3e46;
+    }
+
+    .intro-content p {
+        font-size: 20px;
     }
 
 }
@@ -404,73 +396,25 @@ footer {
     }
 }
 
-@media only screen and (min-width: 768px) {
-
-    .projects-content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    .main-nav {
-        display: block;
-    }
-
-    .mobile-nav {
+@media only screen and (max-width: 280px) {
+    .aboutme-photo {
         display: none;
     }
 
-    .aboutme-container {
-        background: linear-gradient(to bottom, rgba(119, 72, 8, 0.565), rgba(121, 23, 151, 0.291)), url('../img/tai-bui-393l7SYoM7w-unsplash.jpg') center center no-repeat;
-        background-size: cover;
-        border: solid 5px #2f3e46;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
+    .aboutme-content {
         align-items: center;
-        padding: 8px 0;
-        height: 90vh;
-        margin: 5px 20px 5px 20px;
-    }
-
-    .aboutme-photo {
-        display: flex;
         justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        width: 400px;
-        height: 500px;
-        overflow: hidden;
-        margin-left: 10%;
-    }
-
-    .projects-content {
-        font-size: 24px;
-    }
-
-    ul#navigation {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-    }
-
-    ul#navigation li a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 12px;
+        width: 100%;
+        max-width: 768px;
+        text-align: center;
+        margin: 0 auto;
         color: #cad2c5;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-decoration: none;
-        padding: 6px 12px;
-        border: solid 2px transparent;
-        text-transform: uppercase;
-        text-shadow: 2px 2px 2px #2f3e46;
+        text-shadow: 2px 2px 4px #2f3e46;
     }
 
-    ul#navigation li a:hover {
-        color: #F1F1F1;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        padding: 6px 12px;
-        border-bottom: solid 2px #2f3e46;
+    .intro-content p {
+        font-size: 16px;
     }
-
 }
