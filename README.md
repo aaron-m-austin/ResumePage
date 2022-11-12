@@ -15,7 +15,7 @@ A responsive menu utilizing CSS, in which the navbar will turn into a "hamburger
 I have utilized PageSpeed insights via Google Dev Tools and recieved a score of 69, but will make continous improvements to receive a better score.
 
 (Also to note: Accessibility Insights received a score of 100)
-![alt text](https://imgur.com/a/wBED8S5)
+<img src="img\testscores.png" alt="Test Scores" title="Performance Test Scores">
 
 And last but not least (as this is a continous project) I have added transition animations to several elements on hovering. 
 
