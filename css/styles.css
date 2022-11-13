@@ -278,6 +278,12 @@ footer {
     text-align: center;
 }
 
+@media only screen and (min-height: 745px) {
+    .aboutme-photo {
+        width: 300px;
+        height: 350px;
+    }
+}
 
 @media only screen and (min-width: 280px) {
 
@@ -375,7 +381,6 @@ footer {
         align-items: center;
         justify-content: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 20px;
         width: 100%;
         max-width: 768px;
         text-align: center;
@@ -390,9 +395,13 @@ footer {
 
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 490px) {
     .aboutme-photo {
         display: none;
+    }
+
+    .aboutme-content {
+        font-size: 14px;
     }
 }
 
