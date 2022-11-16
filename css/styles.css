@@ -70,6 +70,7 @@ body {
 .intro-content a:hover {
     text-decoration: none;
     color: #f4a261;
+    padding: 6px;
 }
 
 .intro-content .github-link:hover {
@@ -298,6 +299,7 @@ footer {
         text-shadow: 2px 2px 4px #2f3e46;
         background: rgba(47, 62, 70, .8);
         border-radius: 10px;
+        padding: 6px;
     }
 
     .intro-content h1 {
@@ -320,6 +322,7 @@ footer {
         margin: 0 auto;
         color: #cad2c5;
         text-shadow: 2px 2px 4px #2f3e46;
+        padding: 6px;
     }
 
     .aboutme-content button {
